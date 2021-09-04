@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Calendar Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2021-08-04 14:32:47</p>
+                <p class='attribute'><strong>Duration: </strong>227.87 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 20, Pass: 0, Fail: 1, Error: 19</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.CalendarTestcases</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_Launch</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>created folder :  C:\Users\karthiks\PycharmProjects\Calendar\Launcher_Test\screenshots\2021-08-04_14-32
+</p><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 27, in test_calendar01_Launch
+    self.e.select_ok().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py:460: RuntimeWarning: uiautomator2 is not reponding, restart uiautomator2 automatically
+  stacklevel=1)
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_horoscopedemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 305, in test_calendar01_horoscopedemocard
+    self.e.calendar_customize().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_whatsappdemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">JsonRpcError: -32001 Jsonrpc error: <java.lang.SecurityException> data: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+	at android.os.Parcel.createException(Parcel.java:2074)
+	at android.os.Parcel.readException(Parcel.java:2042)
+	at android.os.Parcel.readException(Parcel.java:1990)
+	at android.app.IUiAutomationConnection$Stub$Proxy.injectInputEvent(IUiAutomationConnection.java:471)
+	at android.app.UiAutomation.injectInputEvent(UiAutomation.java:597)
+	at android.support.test.uiautomator.InteractionController.injectEventSync(InteractionController.java:690)
+	at android.support.test.uiautomator.InteractionController.touchMove(InteractionController.java:370)
+	at android.support.test.uiautomator.InteractionController.swipe(InteractionController.java:491)
+	at android.support.test.uiautomator.InteractionController.swipe(InteractionController.java:460)
+	at android.support.test.uiautomator.UiDevice.swipe(UiDevice.java:575)
+	at com.github.uiautomator.stub.AutomatorServiceImpl.swipe(AutomatorServiceImpl.java:210)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:467)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:352)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:283)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:251)
+	at com.github.uiautomator.stub.AutomatorHttpServer.serve(AutomatorHttpServer.java:100)
+	at fi.iki.elonen.NanoHTTPD.serve(NanoHTTPD.java:2244)
+	at fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:945)
+	at fi.iki.elonen.NanoHTTPD$ClientHandler.run(NanoHTTPD.java:192)
+	at java.lang.Thread.run(Thread.java:919)
+, method: swipe</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 319, in test_calendar01_whatsappdemocard
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 44, in __call__
+    _swipe(bottom, up)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 21, in _swipe
+    self._d.swipe(_from[0], _from[1], _to[0], _to[1])
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 421, in swipe
+    self._swipe(fx, fy, tx, ty, steps)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\utils.py", line 54, in inner
+    ret = fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 425, in _swipe
+    return self.jsonrpc.swipe(fx, fy, tx, ty, steps)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 455, in jsonrpc_retry_call
+    return self.jsonrpc_call(*args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 536, in jsonrpc_call
+    raise err
+uiautomator2.exceptions.JsonRpcError: -32001 Jsonrpc error: <java.lang.SecurityException> data: java.lang.SecurityException: Injecting to another application requires INJECT_EVENTS permission
+	at android.os.Parcel.createException(Parcel.java:2074)
+	at android.os.Parcel.readException(Parcel.java:2042)
+	at android.os.Parcel.readException(Parcel.java:1990)
+	at android.app.IUiAutomationConnection$Stub$Proxy.injectInputEvent(IUiAutomationConnection.java:471)
+	at android.app.UiAutomation.injectInputEvent(UiAutomation.java:597)
+	at android.support.test.uiautomator.InteractionController.injectEventSync(InteractionController.java:690)
+	at android.support.test.uiautomator.InteractionController.touchMove(InteractionController.java:370)
+	at android.support.test.uiautomator.InteractionController.swipe(InteractionController.java:491)
+	at android.support.test.uiautomator.InteractionController.swipe(InteractionController.java:460)
+	at android.support.test.uiautomator.UiDevice.swipe(UiDevice.java:575)
+	at com.github.uiautomator.stub.AutomatorServiceImpl.swipe(AutomatorServiceImpl.java:210)
+	at java.lang.reflect.Method.invoke(Native Method)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:467)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:352)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:283)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:251)
+	at com.github.uiautomator.stub.AutomatorHttpServer.serve(AutomatorHttpServer.java:100)
+	at fi.iki.elonen.NanoHTTPD.serve(NanoHTTPD.java:2244)
+	at fi.iki.elonen.NanoHTTPD$HTTPSession.execute(NanoHTTPD.java:945)
+	at fi.iki.elonen.NanoHTTPD$ClientHandler.run(NanoHTTPD.java:192)
+	at java.lang.Thread.run(Thread.java:919)
+, method: swipe
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar02_holiday_enable</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 38, in test_calendar02_holiday_enable
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar02_panchangdemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 287, in test_calendar02_panchangdemocard
+    self.e.calendar_customize().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar03_manage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 52, in test_calendar03_manage
+    self.e.calendar_manageholidays().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar04_panchang</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AttributeError: 'Session or Device' object has no attribute 'scrollTextIntoView'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+AttributeError: 'Session' object has no attribute 'scrollTextIntoView'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 78, in test_calendar04_panchang
+    self.d.scrollTextIntoView("Panchang")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1322, in __getattr__
+    "'Session or Device' object has no attribute '%s'" % attr)
+AttributeError: 'Session or Device' object has no attribute 'scrollTextIntoView'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar05_acccountinfo</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 102, in test_calendar05_acccountinfo
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar05_accounts</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 89, in test_calendar05_accounts
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar06_startweek</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 118, in test_calendar06_startweek
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar07_reminder</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 130, in test_calendar07_reminder
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar08_reminder_time</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 148, in test_calendar08_reminder_time
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar09_reminder_default</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 164, in test_calendar09_reminder_default
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_calendar10_day</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AssertionError: </p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 181, in test_calendar10_day
+    assert res
+AssertionError
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar12_createevent</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 190, in test_calendar12_createevent
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar13_repeat</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 203, in test_calendar13_repeat
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar14_Reminders</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 217, in test_calendar14_Reminders
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar15_accountevents</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 231, in test_calendar15_accountevents
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar302_customize</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 252, in test_calendar302_customize
+    self.e.calendar_customize().click(timeout=2)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar402_customizesetting</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 269, in test_calendar402_customizesetting
+    self.e.calendar_customize().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 20, Pass: 0, Fail: 1, Error: 19 -- Duration: 227.87 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

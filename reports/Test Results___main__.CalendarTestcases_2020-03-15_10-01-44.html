@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Calendar Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2020-03-15 10:01:44</p>
+                <p class='attribute'><strong>Duration: </strong>125.97 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 13, Pass: 6, Fail: 1, Error: 6</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.CalendarTestcases</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar01_Launch</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>created folder :  C:\Users\karthiks\PycharmProjects\Calendar\Launcher_Test\screenshots\2020-03-15_10-01
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar02_holiday_enable</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><uiautomator2.session.UiObject object at 0x05648610>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar03_manage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 50, in test_calendar03_manage
+    self.e.calendar_manageholidays().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar04_panchang</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 79, in test_calendar04_panchang
+    self.d(resourceId="com.android.calendar:id/panchang_card_parent").click(timeout=6)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar05_acccountinfo</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 101, in test_calendar05_acccountinfo
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar05_accounts</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><uiautomator2.session.UiObject object at 0x05660410>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar06_startweek</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><uiautomator2.session.UiObject object at 0x05660B70>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar07_reminder</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><uiautomator2.session.UiObject object at 0x058C2390>
+</p>
+                            </td>
+                        </tr>
+                        <tr class='danger'>
+                            <td class="col-xs-10">test_calendar08_reminder_time</td>
+                            <td class="col-xs-1">
+                                <span class="label label-danger" style="display:block;width:40px;">Fail</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p><uiautomator2.session.UiObject object at 0x058DFF70>
+</p><p style="color:maroon;">AssertionError: </p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 149, in test_calendar08_reminder_time
+    assert res
+AssertionError
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar09_reminder_default</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 158, in test_calendar09_reminder_default
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='success'>
+                            <td class="col-xs-10">test_calendar10_day</td>
+                            <td class="col-xs-1">
+                                <span class="label label-success" style="display:block;width:40px;">Pass</span>
+                            </td>
+                            <td class="col-xs-1">
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar11_holiday_enable</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">UiObjectNotFoundError: -32002 Client error: <> data: , method: None</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 181, in test_calendar11_holiday_enable
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 983, in must_wait
+    raise UiObjectNotFoundError({'code': -32002, 'method': 'wait'})
+uiautomator2.exceptions.UiObjectNotFoundError: -32002 Client error: <> data: , method: None
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar12_manage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=56327): Max retries exceeded with url: /packages/com.android.calendar/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x058DFAF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connection.py", line 157, in _new_conn
+    (self._dns_host, self.port), self.timeout, **extra_kw
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 672, in urlopen
+    chunked=chunked,
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 387, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\karthiks\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1239, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Users\karthiks\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1285, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Users\karthiks\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1234, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Users\karthiks\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 1026, in _send_output
+    self.send(msg)
+  File "C:\Users\karthiks\AppData\Local\Programs\Python\Python36-32\lib\http\client.py", line 964, in send
+    self.connect()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connection.py", line 184, in connect
+    conn = self._new_conn()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connection.py", line 169, in _new_conn
+    self, "Failed to establish a new connection: %s" % e
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x058DFAF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\requests\adapters.py", line 449, in send
+    timeout=timeout
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 760, in urlopen
+    **response_kw
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 760, in urlopen
+    **response_kw
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 760, in urlopen
+    **response_kw
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\connectionpool.py", line 720, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\urllib3\util\retry.py", line 436, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='127.0.0.1', port=56327): Max retries exceeded with url: /packages/com.android.calendar/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x058DFAF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 19, in setUp
+    self.e.start_app()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\Launcher_Test\element_identification.py", line 35, in start_app
+    self.d.app_start(self.app_package)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 863, in app_start
+    info = self.app_info(package_name)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1205, in app_info
+    resp = self._reqsess.get(url)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\requests\sessions.py", line 543, in get
+    return self.request('GET', url, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 245, in request
+    self).request(method, url, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\requests\sessions.py", line 530, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\requests\sessions.py", line 643, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\requests\adapters.py", line 516, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPConnectionPool(host='127.0.0.1', port=56327): Max retries exceeded with url: /packages/com.android.calendar/info (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x058DFAF0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it',))
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 13, Pass: 6, Fail: 1, Error: 6 -- Duration: 125.97 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html

@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Calendar Test Results</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2 class="text-capitalize">Calendar Test Results</h2>
+                <p class='attribute'><strong>Start Time: </strong>2021-08-04 14:19:53</p>
+                <p class='attribute'><strong>Duration: </strong>376.52 s</p>
+                <p class='attribute'><strong>Summary: </strong>Total: 20, Pass: 0, Error: 20</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-md-10">
+                <table class='table table-hover table-responsive'>
+                    <thead>
+                        <tr>
+                            <th>__main__.CalendarTestcases</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_Launch</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p>created folder :  C:\Users\karthiks\PycharmProjects\Calendar\Launcher_Test\screenshots\2021-08-04_14-20
+</p><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 25, in test_calendar01_Launch
+    self.d(resourceId="com.android.calendar:id/title").wait(timeout=2)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py:460: RuntimeWarning: uiautomator2 is not reponding, restart uiautomator2 automatically
+  stacklevel=1)
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_horoscopedemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 299, in test_calendar01_horoscopedemocard
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 27, in __call__
+    rx, ry = self._d.window_size()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 398, in window_size
+    if (w > h) != (self.info["displayRotation"] % 2 == 1):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 650, in info
+    return self.jsonrpc.deviceInfo()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar01_whatsappdemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 319, in test_calendar01_whatsappdemocard
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 27, in __call__
+    rx, ry = self._d.window_size()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 398, in window_size
+    if (w > h) != (self.info["displayRotation"] % 2 == 1):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 650, in info
+    return self.jsonrpc.deviceInfo()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar02_holiday_enable</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 38, in test_calendar02_holiday_enable
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar02_panchangdemocard</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 281, in test_calendar02_panchangdemocard
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 27, in __call__
+    rx, ry = self._d.window_size()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 398, in window_size
+    if (w > h) != (self.info["displayRotation"] % 2 == 1):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 650, in info
+    return self.jsonrpc.deviceInfo()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar03_manage</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 51, in test_calendar03_manage
+    self.d(scrollable=True).scroll(steps=15)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 1199, in __call__
+    return method(selector, self.vertical, steps)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar04_panchang</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">AttributeError: 'Session or Device' object has no attribute 'scrollTextIntoView'</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+AttributeError: 'Session' object has no attribute 'scrollTextIntoView'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 78, in test_calendar04_panchang
+    self.d.scrollTextIntoView("Panchang")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1322, in __getattr__
+    "'Session or Device' object has no attribute '%s'" % attr)
+AttributeError: 'Session or Device' object has no attribute 'scrollTextIntoView'
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar05_acccountinfo</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 102, in test_calendar05_acccountinfo
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar05_accounts</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 89, in test_calendar05_accounts
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar06_startweek</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 118, in test_calendar06_startweek
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar07_reminder</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 130, in test_calendar07_reminder
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar08_reminder_time</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 148, in test_calendar08_reminder_time
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar09_reminder_default</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 164, in test_calendar09_reminder_default
+    self.e.menu().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar10_day</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 179, in test_calendar10_day
+    self.d( scrollable = True ).scroll ( steps = 4 )
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 1199, in __call__
+    return method(selector, self.vertical, steps)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar12_createevent</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 190, in test_calendar12_createevent
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar13_repeat</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 203, in test_calendar13_repeat
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar14_Reminders</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 217, in test_calendar14_Reminders
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar15_accountevents</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 231, in test_calendar15_accountevents
+    self.e.calendar_createevent().click(timeout=3)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 38, in _inner
+    return fn(self, *args, **kwargs)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 788, in click
+    self.must_wait(timeout=timeout)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 982, in must_wait
+    if not self.wait(exists, timeout):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 954, in wait
+    http_timeout=http_wait)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar302_customize</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 246, in test_calendar302_customize
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 27, in __call__
+    rx, ry = self._d.window_size()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 398, in window_size
+    if (w > h) != (self.info["displayRotation"] % 2 == 1):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 650, in info
+    return self.jsonrpc.deviceInfo()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr class='warning'>
+                            <td class="col-xs-10">test_calendar402_customizesetting</td>
+                            <td class="col-xs-1">
+                                <span class="label label-warning" style="display:block;width:40px;">Error</span>
+                            </td>
+                            <td class="col-xs-1">
+                                <button class="btn btn-default btn-xs">View</button>
+                            </td>
+                        </tr>
+                        <tr style="display:none;">
+                            <td class="col-xs-9" colspan="3"><p style="color:maroon;">OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues</p><p style="color:maroon;">Traceback (most recent call last):
+  File "C:/Users/karthiks/PycharmProjects/Calendar/Launcher_Test/Test_Launch.py", line 263, in test_calendar402_customizesetting
+    self.d.swipe_ext("up")
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\swipe.py", line 27, in __call__
+    rx, ry = self._d.window_size()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 398, in window_size
+    if (w > h) != (self.info["displayRotation"] % 2 == 1):
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 1319, in __getattr__
+    return getattr(self._default_session, attr)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\session.py", line 650, in info
+    return self.jsonrpc.deviceInfo()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 439, in __call__
+    params, http_timeout)
+  File "<decorator-gen-10>", line 2, in jsonrpc_retry_call
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 74, in retry_decorator
+    logger)
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\retry\api.py", line 33, in __retry_internal
+    return f()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 452, in jsonrpc_retry_call
+    self.reset_uiautomator()
+  File "C:\Users\karthiks\PycharmProjects\Calendar\venv\lib\site-packages\uiautomator2\__init__.py", line 668, in reset_uiautomator
+    "Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues"
+OSError: Uiautomator started failed. Find solutions in https://github.com/openatx/uiautomator2/wiki/Common-issues
+</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="3">
+                                Total: 20, Pass: 0, Error: 20 -- Duration: 376.52 s
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('td').on('click', '.btn', function(e){
+                e.preventDefault();
+                e.stopImmediatePropagation();
+                var $this = $(this);
+                var $nextRow = $this.closest('tr').next('tr');
+                $nextRow.slideToggle("fast");
+                $this.text(function(i, text){
+                    if (text === 'View') {
+                        return 'Hide';
+                    } else {
+                        return 'View';
+                    };
+                });
+            });
+        });
+    </script>
+</body>
+</html
